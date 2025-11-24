@@ -1,0 +1,8 @@
+D:\Shashank Shetye\StringComparison443\StringComparison443\obj\Debug\StringComparison443.csproj.AssemblyReference.cache
+D:\Shashank Shetye\StringComparison443\StringComparison443\obj\Debug\StringComparison443.csproj.SuggestedBindingRedirects.cache
+D:\Shashank Shetye\StringComparison443\StringComparison443\obj\Debug\StringComparison443.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\StringComparison443\StringComparison443\bin\Debug\StringComparison443.exe.config
+D:\Shashank Shetye\StringComparison443\StringComparison443\bin\Debug\StringComparison443.exe
+D:\Shashank Shetye\StringComparison443\StringComparison443\bin\Debug\StringComparison443.pdb
+D:\Shashank Shetye\StringComparison443\StringComparison443\obj\Debug\StringComparison443.exe
+D:\Shashank Shetye\StringComparison443\StringComparison443\obj\Debug\StringComparison443.pdb

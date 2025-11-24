@@ -1,0 +1,8 @@
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\bin\Debug\MaxVowelinSubString1456.exe.config
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\bin\Debug\MaxVowelinSubString1456.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\bin\Debug\MaxVowelinSubString1456.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\obj\Debug\MaxVowelinSubString1456.csproj.AssemblyReference.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\obj\Debug\MaxVowelinSubString1456.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\obj\Debug\MaxVowelinSubString1456.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\obj\Debug\MaxVowelinSubString1456.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\MaxVowelinSubString1456\obj\Debug\MaxVowelinSubString1456.exe.config

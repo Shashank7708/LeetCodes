@@ -1,0 +1,8 @@
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\bin\Debug\Test1.exe.config
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\bin\Debug\Test1.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\bin\Debug\Test1.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\obj\Debug\Test1.csproj.AssemblyReference.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\obj\Debug\Test1.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\obj\Debug\Test1.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\obj\Debug\Test1.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\Test1\obj\Debug\Test1.exe.config

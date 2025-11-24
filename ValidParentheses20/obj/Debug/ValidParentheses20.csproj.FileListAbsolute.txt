@@ -1,0 +1,8 @@
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\bin\Debug\ValidParentheses20.exe.config
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\bin\Debug\ValidParentheses20.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\bin\Debug\ValidParentheses20.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\obj\Debug\ValidParentheses20.csproj.AssemblyReference.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\obj\Debug\ValidParentheses20.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\obj\Debug\ValidParentheses20.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\obj\Debug\ValidParentheses20.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\ValidParentheses20\obj\Debug\ValidParentheses20.exe.config

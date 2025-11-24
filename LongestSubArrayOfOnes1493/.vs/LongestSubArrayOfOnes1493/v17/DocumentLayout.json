@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Shashank Shetye\\swabhav\\LeetCode 75\\LongestSubArrayOfOnes1493\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1826DE19-5862-47DB-B56D-A87226D9CB8A}|LongestSubArrayOfOnes1493.csproj|d:\\shashank shetye\\swabhav\\leetcode 75\\longestsubarrayofones1493\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1826DE19-5862-47DB-B56D-A87226D9CB8A}|LongestSubArrayOfOnes1493.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shashank Shetye\\swabhav\\LeetCode 75\\LongestSubArrayOfOnes1493\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Shashank Shetye\\swabhav\\LeetCode 75\\LongestSubArrayOfOnes1493\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T10:55:49.395Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

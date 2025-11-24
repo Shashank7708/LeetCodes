@@ -1,0 +1,8 @@
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\bin\Debug\AstroidCollision735.exe.config
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\bin\Debug\AstroidCollision735.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\bin\Debug\AstroidCollision735.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\obj\Debug\AstroidCollision735.csproj.AssemblyReference.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\obj\Debug\AstroidCollision735.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\obj\Debug\AstroidCollision735.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\obj\Debug\AstroidCollision735.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\AstroidCollision735\obj\Debug\AstroidCollision735.exe.config

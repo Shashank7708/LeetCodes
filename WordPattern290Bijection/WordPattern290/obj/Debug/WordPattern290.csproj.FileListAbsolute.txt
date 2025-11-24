@@ -1,0 +1,8 @@
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\obj\Debug\WordPattern290.csproj.AssemblyReference.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\obj\Debug\WordPattern290.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\bin\Debug\WordPattern290.exe.config
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\bin\Debug\WordPattern290.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\bin\Debug\WordPattern290.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\obj\Debug\WordPattern290.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\obj\Debug\WordPattern290.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\WordPattern290\WordPattern290\obj\Debug\WordPattern290.exe.config

@@ -1,0 +1,15 @@
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.csproj.AssemblyReference.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.AssemblyInfoInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.AssemblyInfo.cs
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\bin\Debug\net6.0\LeetCode345ReverseVowel.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\bin\Debug\net6.0\LeetCode345ReverseVowel.deps.json
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\bin\Debug\net6.0\LeetCode345ReverseVowel.runtimeconfig.json
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\bin\Debug\net6.0\LeetCode345ReverseVowel.dll
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\bin\Debug\net6.0\LeetCode345ReverseVowel.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.dll
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\refint\LeetCode345ReverseVowel.dll
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\LeetCode345ReverseVowel.genruntimeconfig.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\LeetCode345ReverseVowel\obj\Debug\net6.0\ref\LeetCode345ReverseVowel.dll

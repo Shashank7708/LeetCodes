@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Shashank Shetye\\swabhav\\LeetCode 75\\WordPattern290\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DBAD84-9D27-4A91-92C0-CD86C1D31B1F}|WordPattern290\\WordPattern290.csproj|d:\\shashank shetye\\swabhav\\leetcode 75\\wordpattern290\\wordpattern290\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1DBAD84-9D27-4A91-92C0-CD86C1D31B1F}|WordPattern290\\WordPattern290.csproj|solutionrelative:wordpattern290\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shashank Shetye\\swabhav\\LeetCode 75\\WordPattern290\\WordPattern290\\Program.cs",
+              "RelativeDocumentMoniker": "WordPattern290\\Program.cs",
+              "ToolTip": "D:\\Shashank Shetye\\swabhav\\LeetCode 75\\WordPattern290\\WordPattern290\\Program.cs*",
+              "RelativeToolTip": "WordPattern290\\Program.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T11:19:22.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

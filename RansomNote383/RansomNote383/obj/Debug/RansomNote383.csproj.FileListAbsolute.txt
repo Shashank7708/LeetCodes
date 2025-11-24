@@ -1,0 +1,8 @@
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\obj\Debug\RansomNote383.csproj.AssemblyReference.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\obj\Debug\RansomNote383.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\bin\Debug\RansomNote383.exe.config
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\bin\Debug\RansomNote383.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\bin\Debug\RansomNote383.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\obj\Debug\RansomNote383.exe
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\obj\Debug\RansomNote383.pdb
+D:\Shashank Shetye\swabhav\LeetCode 75\RansomNote383\RansomNote383\obj\Debug\RansomNote383.exe.config

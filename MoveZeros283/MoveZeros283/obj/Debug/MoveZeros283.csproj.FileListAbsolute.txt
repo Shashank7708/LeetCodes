@@ -1,0 +1,8 @@
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\bin\Debug\MoveZeros283.exe.config
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\bin\Debug\MoveZeros283.exe
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\bin\Debug\MoveZeros283.pdb
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\obj\Debug\MoveZeros283.csproj.AssemblyReference.cache
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\obj\Debug\MoveZeros283.csproj.SuggestedBindingRedirects.cache
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\obj\Debug\MoveZeros283.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\obj\Debug\MoveZeros283.exe
+D:\Shashank Shetye\MoveZeros283\MoveZeros283\obj\Debug\MoveZeros283.pdb

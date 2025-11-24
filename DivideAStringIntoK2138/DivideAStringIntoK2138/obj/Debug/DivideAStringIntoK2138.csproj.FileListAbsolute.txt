@@ -1,0 +1,8 @@
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\bin\Debug\DivideAStringIntoK2138.exe.config
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\bin\Debug\DivideAStringIntoK2138.exe
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\bin\Debug\DivideAStringIntoK2138.pdb
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\obj\Debug\DivideAStringIntoK2138.csproj.AssemblyReference.cache
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\obj\Debug\DivideAStringIntoK2138.csproj.SuggestedBindingRedirects.cache
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\obj\Debug\DivideAStringIntoK2138.csproj.CoreCompileInputs.cache
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\obj\Debug\DivideAStringIntoK2138.exe
+D:\Shashank Shetye\DivideAStringIntoK2138\DivideAStringIntoK2138\obj\Debug\DivideAStringIntoK2138.pdb
