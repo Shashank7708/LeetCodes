@@ -1,0 +1,55 @@
+public class Solution {
+    public IList<IList<int>> ThreeSum(int[] nums) {
+        Array.Sort(nums);
+        List<IList<int>> list=new List<IList<int>>();
+        HashSet<string> set=new HashSet<string>();
+        for(int i=0;i<nums.Length-2;i++){
+            int l=i+1;
+            int r=nums.Length-1;
+            while(l<r){
+                int sum1=nums[i]+nums[l]+nums[r];
+                if(sum1==0){
+                    var l1=new List<int>{nums[i],nums[l],nums[r]};
+                    l1.Sort();
+                    string temp=string.Join(',',l1);
+                    if(!set.Contains(temp)){
+                        list.Add(l1);
+                        set.Add(temp);
+                    }
+                    l++;
+                    r--;
+                }
+                else if(sum1<0){
+                    l++;
+                }
+                else 
+                    r--;
+            }
+        }
+    return list;
+
+        /*List<List<int>> lst=new List<List<int>>();
+        HashSet<string> set=new HashSet<string>();
+        for(int i=0;i<nums.Length-2;i++){
+            for(int j=i+1;j<nums.Length-1;j++){
+                for(int k=j+1;k<nums.Length;k++){
+                        if(nums[i]+nums[j]+nums[k]==0){
+                            List<int> l=new List<int>();
+                            l.Add(nums[i]);
+                            l.Add(nums[j]);
+                            l.Add(nums[k]);
+                            l.Sort();
+                            string temp=string.Join(',',l);
+                            if(!set.Contains(temp)){
+                                lst.Add(l);
+                                set.Add(temp);
+                            }
+                        }
+                }
+            }
+        }
+        
+       return lst;
+       */
+    }
+}

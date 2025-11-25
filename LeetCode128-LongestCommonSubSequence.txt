@@ -1,0 +1,70 @@
+public class Solution {
+    public int LongestConsecutive(int[] nums) {
+       if(nums.Length<=1)
+            return nums.Length;
+
+        HashSet<int> set=new HashSet<int>();
+        foreach(var i in nums){
+            set.Add(i);
+        }
+        int longestLen=0;
+        int currentVal=0;
+        int currentLen=1;
+        foreach(var i in set){
+            if(!set.Contains(i-1)){
+                currentLen=1;
+                currentVal=i;
+                while(set.Contains(currentVal+1)){
+                    currentLen++;
+                    currentVal++;
+                }
+                longestLen=Math.Max(longestLen,currentLen);//? currentLen:longestLen;
+            }
+        }
+        return longestLen;
+       /* PriorityQueue<int,int> queue=new PriorityQueue<int,int>();
+        foreach(var i in nums){
+            queue.Enqueue(1,i);
+        }
+        int currlen=1;
+        int longestLen=1;
+        int previous=0;
+        int previousVal=0;
+        queue.TryDequeue(out previous,out previousVal);
+        while(queue.Count>0){
+            int currentPriority=0;
+            int currentVal=0;
+            queue.TryDequeue(out currentPriority, out currentVal);
+            if(previousVal==currentVal)
+                continue;
+            if(currentVal==previousVal+1){
+                currlen++;
+                longestLen=longestLen<currlen? currlen:longestLen;
+            }
+            else
+                currlen=1;
+            previousVal=currentVal;
+        }
+    return longestLen;
+
+*/
+/*
+        Array.Sort(nums);
+        int longestLen=1;
+        int currLen=1;
+        int previousEle=nums[0];
+        for(int i=1;i<nums.Length;i++){
+            if(nums[i]==previousEle)
+                continue;
+            if(nums[i]==previousEle+1){
+                currLen++;
+                longestLen=longestLen<currLen? currLen:longestLen;
+            }
+            else 
+                currLen=1;
+            previousEle=nums[i];
+        }
+        return longestLen;
+        */
+    }
+}

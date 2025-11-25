@@ -1,0 +1,42 @@
+public class Solution {
+
+    public string Encode(IList<string> strs) {
+        List<int> sizes=new List<int>();
+        StringBuilder sb=new StringBuilder();
+        foreach(var str in strs)
+            sizes.Add(str.Length);
+        
+        for(int i=0;i<sizes.Count;i++){
+            sb.Append(sizes[i].ToString()).Append(";");
+        }
+        sb.Append("#");
+        foreach(var str in strs){
+            sb.Append(str);
+        }
+        return sb.ToString();
+    }
+
+
+    public List<string> Decode(string s) {
+        int counter=0;
+        List<int> sizes=new List<int>();
+        List<string> lst=new List<string>();
+       // lst.Add("acb");
+        while(s[counter]!='#'){
+            StringBuilder num=new StringBuilder();
+            while(s[counter]!=';')
+            {
+                num.Append(s[counter++]);
+               // counter++;
+            }
+            sizes.Add(Int32.Parse(num.ToString()));
+            counter++;
+        }
+        counter++;
+        foreach(int i in sizes){
+            lst.Add(s.Substring(counter,i));
+            counter+=i;
+        }
+        return lst;
+   }
+}
