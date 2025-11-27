@@ -1,0 +1,56 @@
+public class Solution {
+    public int Trap(int[] height) {
+
+
+    //this solution is based on next solution with some modification as I was getting time limit exceed
+     int waterStorage=0;
+    // var leftArray=new int[height.Lenght-1];
+     var rightMaxArr=new int[height.Length];
+    int rightMax=0;
+    for(int i=height.Length-2;i>=0;i--){
+        rightMax=Math.Max(rightMax, height[i+1]);
+        rightMaxArr[i]=rightMax;
+    }
+  
+     int leftmax=0;
+       for(int i=1;i<height.Length-1;i++){
+        
+        leftmax=Math.Max(leftmax,height[i-1]);
+      //  int counter=i+1;
+      //  while(counter<height.Length){
+      //       rightmax=Math.Max(rightmax,height[counter]);
+      //      counter++;
+      //  };
+        int currentWaterStorageVertically=Math.Min(rightMaxArr[i],leftmax)-height[i];
+        if(currentWaterStorageVertically>0)
+            waterStorage+=currentWaterStorageVertically;
+
+       } 
+       return waterStorage;
+       
+
+       //Use left and right pointer and minus current height
+       /*
+        int waterStorage=0;
+       for(int i=1;i<height.Length-1;i++){
+        int leftmax=0,rightmax=0;
+        int counter=i-1;
+        while(counter>=0){
+             leftmax=Math.Max(leftmax,height[counter]);
+            counter--;
+        };
+        counter=i+1;
+        while(counter<height.Length){
+             rightmax=Math.Max(rightmax,height[counter]);
+            counter++;
+        };
+        int currentWaterStorageVertically=Math.Min(rightmax,leftmax)-height[i];
+        if(currentWaterStorageVertically>0)
+            waterStorage+=currentWaterStorageVertically;
+
+       } 
+       return waterStorage;
+*/
+    }   
+
+}

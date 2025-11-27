@@ -1,0 +1,73 @@
+public class Solution {
+    public bool CheckInclusion(string s1, string s2) {
+        if(s1.Length>s2.Length)
+            return false;
+
+        char[] arr=new char[26];
+         int counter=0;
+        for(int i=0;i<s1.Length;i++){
+            arr[s1[i]-'a']++;
+            arr[s2[i]-'a']--;
+            counter++;
+        }
+      //  for(int i=0;i<s1.Length;i++){
+      //      arr[s2[i]-'a']--;
+      //      counter++;
+       // }
+        if(CheckIfArrayIsAllZero(arr))
+            return true;
+        int start=0;
+        while(counter<s2.Length){
+            arr[s2[start]-'a']++;
+            arr[s2[counter]-'a']--;
+            if(CheckIfArrayIsAllZero(arr))
+                return true;
+            start++;
+            counter++;
+        }
+    return false;
+        /*
+        int s1Len=s1.Length;
+        char[] s1Array=s1.ToCharArray();
+        Array.Sort(s1Array);
+        int s2Len=s2.Length;
+        for(int i=0;i<=s2.Length-s1Len;i++){
+            char[] arr=s2.Substring(i,s1Len).ToCharArray();
+            Array.Sort(arr);
+            if(arr.SequenceEqual(s1Array))
+                return true;
+        }
+        return false;
+        */
+
+      // Brute Force
+      /*
+        var s1Temp=s1.ToCharArray();
+        Array.Sort(s1Temp);
+        for(int start=0;start<s2.Length;start++){
+            for(int end=start;end<s2.Length;end++){
+                char[] arr=new char[end-start+1];
+                int counter=0;
+                for(int i=start;i<=end;i++,counter++){
+                    arr[counter]=s2[i];
+                }
+                Array.Sort(arr);
+               // string temp=string.Join(',',arr);
+                if(arr.SequenceEqual(s1Temp)){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+        */
+    }
+
+    bool CheckIfArrayIsAllZero(char[] arr){
+        for(int i=0;i<arr.Length;i++){
+            if(arr[i]!=0)
+                return false;
+        }
+        return true;
+    }
+}
