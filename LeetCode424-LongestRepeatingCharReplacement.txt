@@ -1,0 +1,41 @@
+public class Solution {
+    public int CharacterReplacement(string s, int k) {
+
+        int[] arr=new int[26];
+        int start=0;
+        int maxCharCount=0;
+        int res=0;
+        for(int end=0;end<s.Length;end++){
+            arr[s[end]-'A']++;
+            maxCharCount=Math.Max(maxCharCount, arr[s[end]-'A']);
+            int currLen=end-start+1;
+            while((end-start+1)-maxCharCount>k){
+                arr[s[start]-'A']--;
+                start++;
+            }
+            res=Math.Max(res,end-start+1);
+        }
+        return res;
+        //Brute Force
+        /*
+       int maxDistinct=0;
+       for(int start=0;start<s.Length;start++){
+        for(int end=start;end<s.Length;end++){
+            int len=end-start+1;
+            int maxCountChar=0;
+            int[] charCounts=new int[26];
+            for(int i=start;i<=end;i++){
+                charCounts[s[i]-'A']++;
+                maxCountChar=Math.Max(maxCountChar,charCounts[s[i]-'A']);
+            }
+            int lenDiff=len-maxCountChar;
+            if(lenDiff<=k){
+                maxDistinct=Math.Max(maxDistinct,len);
+            }
+        }
+       } 
+       return maxDistinct;
+       */
+       
+    }
+}

@@ -1,0 +1,107 @@
+public class MinStack {
+    private class Node{
+        public int value;
+        public int minValue;
+        public Node next;
+        public Node(int v, int minV,Node next){
+            this.value=v;
+            this.minValue=minV;
+            this.next=next;
+        }
+    }
+
+    Node head;
+    int count=0;
+    int minValue=int.MaxValue;
+    public MinStack() {
+        
+    }
+    public void Push(int val) {
+        if(count==0){
+            minValue=val;
+            head=new Node(val,minValue,null);
+        }
+        else{
+            minValue=Math.Min(minValue,val);
+            var node=new Node(val,minValue,head);
+            head=node;
+        }
+        count++;
+    }
+    public void Pop() {
+        if(count==0)
+            throw new Exception("Stack is Empty");
+        head=head.next;
+        count--;
+       if(count==0){
+        minValue=0;
+        return;
+       }
+       else
+        minValue=head.minValue;
+
+    }
+    public int Top() {
+        if(head==null)
+            throw new Exception("Stack is Empty");
+        return head.value;
+    }
+    public int GetMin() {
+        return head.minValue;
+    }
+
+
+    /*Using Stack
+    Stack<(int,int)> stack=new Stack<(int,int)>();
+    int currentMin=int.MaxValue;
+
+    public MinStack() {
+        
+    }
+    
+    public void Push(int val) {
+        
+        if(stack.Count==0)
+            currentMin=val;
+        else
+            currentMin=Math.Min(currentMin,val);
+        stack.Push((val,currentMin));
+        
+    }
+    
+    public void Pop() {
+        if(stack.Count==0)
+            throw new Exception("Stack is empty");
+        
+        stack.Pop();
+        if(stack.Count==0){
+            currentMin=0; 
+            return;
+        }
+        int curr=0;
+        (curr,currentMin)= stack.Peek();
+    }
+
+    
+    public int Top() {
+        if(stack.Count==0)
+            return 0;
+    int curr=0;
+    (curr,currentMin)= stack.Peek();
+    return curr;
+    }
+    
+    public int GetMin() {
+    return currentMin;
+    }
+    */
+}
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.Push(val);
+ * obj.Pop();
+ * int param_3 = obj.Top();
+ * int param_4 = obj.GetMin();
+ */
