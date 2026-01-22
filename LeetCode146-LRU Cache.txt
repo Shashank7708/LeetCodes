@@ -1,0 +1,251 @@
+public class LRUCache {
+
+//If I store key as well in ListNode it will optimized at FirstOrDefault..thats why i am getting time limit exceed
+    private class ListNode{
+        public int val;
+        public ListNode next;
+        public ListNode prev;
+        public ListNode(int val){
+            this.val=val;
+        }
+    }
+
+    int cap;
+    Dictionary<int,ListNode> dict;
+    ListNode head;
+    ListNode tail;
+
+    public LRUCache(int capacity) {
+      this.cap=capacity;
+      dict=new ();
+      head=new (0);
+      tail=new (0);
+
+      head.next=tail;
+      tail.prev=head;
+
+    }
+    public int Get(int key) {
+        if(dict.ContainsKey(key)){
+            ListNode n=dict[key];
+            RemoveNode(n);
+            AddNodetoHead(n);
+            return n.val;
+        }
+        return -1;
+    }
+
+    public void Put(int key, int value) {
+       if(dict.ContainsKey(key)){
+        ListNode node=dict[key];
+        node.val=value;
+        RemoveNode(node);
+        AddNodetoHead(node);
+       }
+       else{
+            if(dict.Count==this.cap){
+                ListNode n=tail.prev;
+                int keyToRemove=dict.FirstOrDefault(x=>x.Value==n).Key;
+                dict.Remove(keyToRemove);
+                RemoveNode(n);
+            }
+            ListNode nodeToAdd=new ListNode(value);
+            AddNodetoHead(nodeToAdd);
+            dict[key]=nodeToAdd;
+       }
+    }
+
+    private void AddNodetoHead(ListNode n){
+        n.prev=head;
+        n.next=head.next;
+        head.next.prev=n;
+        head.next=n;
+    }
+
+    private void RemoveNode(ListNode n){
+        ListNode previousNode=n.prev;
+        ListNode nextNode=n.next;
+        previousNode.next=nextNode;
+        nextNode.prev=previousNode;
+    }
+
+}
+
+/*
+public class LRUCache {
+    int cap=0;
+    List<int> lst=new List<int>();
+    Dictionary<int,int> dict=new Dictionary<int,int>();
+    public LRUCache(int capacity) {
+        this.cap=capacity;
+    }
+
+    public int Get(int key) {
+    
+        if(lst.Contains(key)){
+            lst.Remove(key);
+            lst.Add(key);
+            return dict[key];
+        }
+        return -1;
+    }
+    public void Put(int key, int value) {
+        
+        if(lst.Contains(key)){
+            lst.Remove(key);
+            dict[key]=value;
+            lst.Add(key);
+        }    
+        else {
+            dict[key]=value;
+            lst.Add(key);
+        }
+        if(lst.Count>this.cap){
+            int k=lst[0];
+            dict.Remove(k);
+            lst.Remove(k);
+        }
+    }
+}
+
+*/
+
+/*public class LRUCache {
+    private class ListNode{
+       public int value;
+       public int key;
+       public ListNode prev;
+       public ListNode next;
+        public ListNode(int val){
+            this.value=val;
+        }
+    }
+
+    Dictionary<int,ListNode> dict=new ();
+    ListNode head=null;
+    ListNode tail;
+    int cap=0;
+    public LRUCache(int capacity) {
+        this.cap=capacity;
+    }
+    
+    public int Get(int key) {
+        if(dict.ContainsKey(key)){
+            ListNode node=dict[key];
+            
+            if(node==head){
+                ListNode n=new ListNode(head.value);
+                n.prev=tail;
+                tail.next=n;
+                tail=n;
+                head=head.next;
+    
+                dict[key]=n;
+                return node.value;
+                
+            }
+            else if(node==tail){
+                return node.value;
+            }
+            else{
+                int val=node.value;
+                ListNode n=new ListNode(val);
+                n.prev=tail;
+                tail.next=n;
+                tail=n;
+                return val;
+            }
+        }
+        return -1;
+    }
+    
+    public void Put(int key, int value) {
+        if(dict.Count==0){
+            ListNode node=new ListNode(value);
+            head=node;
+            tail=node;
+            dict[key]=node;
+        }
+        else{
+            if(!dict.ContainsKey(key)){
+            ListNode node=new ListNode(value);
+            node.prev=tail;
+            tail.next=node;
+            tail=node;
+                if(dict.Count==cap){
+                ListNode nodetoRemove=head;
+                var k=dict.FirstOrDefault(x=>x.Value==nodetoRemove).Key;
+                dict.Remove(k);
+                head=nodetoRemove.next;
+                }
+                dict[key]=node;
+            }
+            else{
+                 if(dict.Count==1 && dict.ContainsKey(value)){
+                    ListNode node=new ListNode(value);
+                    head=node;
+                    tail=node;
+                    dict[key]=node;
+                 }
+                else {
+                ListNode n=new ListNode(value);
+                n.prev=tail;
+                tail.next=n;
+                tail=n;
+                dict[key]=n;
+                }
+            }
+            
+        }
+
+
+    }
+    
+}
+*/
+/*
+
+public class LRUCache {
+    Dictionary<int,int> dict;
+    List<int> lst;
+    int cap=0;
+    public LRUCache(int capacity) {
+        dict=new ();
+        lst=new ();
+        cap=capacity;
+    }
+    
+    public int Get(int key) {
+        if(dict.ContainsKey(key)){
+            lst.Remove(key);
+            lst.Add(key);
+            return dict[key];
+        }
+        return -1;
+    }
+    
+    public void Put(int key, int value) {
+        if(dict.ContainsKey(key)){
+            lst.Remove(key);
+            lst.Add(key);
+            dict[key]=value;
+            
+        }
+        else {
+            if(dict.Count==cap){
+                dict.Remove(lst[0]);
+                lst.Remove(lst[0]);
+            }
+            lst.Add(key);
+            dict[key]=value;
+        }
+    }
+}
+*/
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.Get(key);
+ * obj.Put(key,value);
+ */

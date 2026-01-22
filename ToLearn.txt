@@ -1,2 +1,41 @@
 C#, sql server, cosmos db(learn computing,storage,networking, identity(azure ad)),microservices, load balancing
 docker, kubernetes,logs(azure monitoring,application insights,prometheus)
+
+
+https://www.blog.codeinmotion.io/p/leetcode-patterns
+
+
+When working with collections, in C#, the most efficient method is to use the SequencesEqual method, especially if you aren't working with huge datasets or custom comparison rules. It is the most elegant option that keeps your code simple, as it checks for all aspects of the collections (size, order, and element equality) without the need for code that overcomplicates the program. If you are working with arrays, List, or any other IEnumerable collections, you really should use this method as it is the best option in the code skeptics perspective as well.
+
+#DotNet 
+#DotNetCore 
+#CleanCode 
+#SoftwareEngineering 
+#EFCore 
+#DependencyInjection 
+#RepositoryPattern 
+#SoftwareArchitecture
+
+
+I hope you're doing well. I just completed Master's and been exploring opportunities in Software Development role. I’m currently looking to take the next step in my career, and I wanted to reach out to see if you might be open to sharing some guidance or advice based on your experience.
+
+If you happen to know of any teams hiring for any relevant roles, I would truly appreciate any referrals or recommendations you could offer.
+
+Thank you so much for your time — it means a lot.
+Happy to connect further if there's anything I can do to support you as well.
+
+Best regards,
+
+
+
+Hello ,
+I hope you are doing well. I’m Shashank Shetye, and I came across your profile while exploring job opportunities and wanted to ask you if you could refer me for Full Stack Developer position at UST: https://usource.ripplehire.com/candidate/?token=8YxWjpwDhdL62DFYUIcQ&lang=en&source=USTLINKEDIN&ref=USTLINKEDIN#detail/job/48540 .
+
+I have 4 years of experience in .Net Full Stack Development. I have also worked on Angular, HTML, Microsoft SQL Server. I also have hands-on experience in Azure Cloud Storage services like Blob Storage and Service Bus. I am comfortable working in Agile development with delivering requirements.
+
+If you’re able to refer me or point me in the right direction, I would sincerely appreciate it.
+
+Thanks for your time!
+
+Best Regards,
+Shashank Shetye

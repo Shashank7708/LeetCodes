@@ -1,0 +1,42 @@
+public class Solution {
+    public int MinEatingSpeed(int[] piles, int h) {
+       
+       int min=int.MaxValue;
+       int l=1,r=piles.Max();
+       while(l<=r){
+        int mid=(l+r)/2;
+        double ans=0;
+        for(int j=0;j<piles.Length;j++){
+                double temp=Math.Ceiling((double)piles[j]/mid);
+                ans+=temp;
+        }
+        if(ans<=h){
+            min=Math.Min(min,mid);
+            r=mid-1;
+        }
+        else
+            l=mid+1;
+       }
+       return min;
+    
+
+        //Brute Force
+        /*
+        int minInArray=1;
+       int maxInArray=piles.Max();
+        for(int i=minInArray;i<=maxInArray;i++){
+            int divider=i;
+            int ans=0;
+            for(int j=0;j<piles.Length;j++){
+                double temp=Math.Ceiling((double)piles[j]/divider);
+                ans+=(int)temp;
+            }
+            if(ans<=h){
+                min=Math.Min(min,i);
+                break;
+            }
+        }
+        return min;
+    */
+    }
+}

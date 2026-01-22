@@ -1,0 +1,54 @@
+public class Solution {
+    public double FindMedianSortedArrays(int[] nums1, int[] nums2) {
+        int len1=nums1.Length,len2=nums2.Length;
+        int[] arr=new int[(len1+len2)/2+1];
+        int n1=0,n2=0,counter=0;
+        while(n1<len1 && n2<len2 && counter<arr.Length){
+            if(nums1[n1]>=nums2[n2]){
+                arr[counter++]=nums2[n2++];
+            }
+            else
+                arr[counter++]=nums1[n1++];
+        }
+        while(n1<len1 && counter<arr.Length)
+            arr[counter++]=nums1[n1++];
+        while(n2<len2 && counter<arr.Length)
+            arr[counter++]=nums2[n2++];
+        int prev=0,current=0;
+        for(int i=0;i<arr.Length;i++){
+            prev=current;
+            current=arr[i];
+        }
+        if((len1+len2)%2==0)
+            return ((double)prev+current)/2; 
+        else
+            return (double) current;
+
+/*
+      int i=0,j=0;
+        int mLen=nums1.Length+nums2.Length;
+        int[] mergerdArr=new int[mLen];
+        int counter=0;
+        while(i<nums1.Length && j<nums2.Length){
+            if(nums1[i]<=nums2[j])
+                mergerdArr[counter++]=nums1[i++];
+            else
+                mergerdArr[counter++]=nums2[j++];
+        }
+        while(i<nums1.Length)
+            mergerdArr[counter++]=nums1[i++];
+        while(j<nums2.Length)
+            mergerdArr[counter++]=nums2[j++];
+        
+        int r=mLen-1;
+        int mid=r/2;
+        if(mLen%2==0)
+        {  
+            return ((double)mergerdArr[mid]+mergerdArr[mid+1])/2;
+        }
+        return (double)mergerdArr[mid];
+*/
+    }
+}
+
+

@@ -1,0 +1,10 @@
+public class Solution {
+    public int[] Shuffle(int[] nums, int n) {
+        Queue<int> queue=new Queue<int>();
+        for(int i=0;i<n;i++){
+            queue.Enqueue(nums[i]);
+            queue.Enqueue(nums[n+i]);
+        }
+        return queue.ToArray();
+    }
+}

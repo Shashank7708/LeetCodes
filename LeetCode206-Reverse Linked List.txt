@@ -1,0 +1,75 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     public ListNode(int val=0, ListNode next=null) {
+ *         this.val = val;
+ *         this.next = next;
+ *     }
+ * }
+ */
+
+
+public class Solution {
+    public ListNode ReverseList(ListNode head) {
+      if(head==null)
+            return head;
+        ListNode previous=null;
+        var current=head;
+        while(current!=null){
+            var nextNode=current.next;
+            current.next=previous;
+            previous=current;
+            current=nextNode;
+        }
+        return previous;
+
+      /*
+        if(head==null)
+            return head;
+        List<int> lst=new List<int>();
+        ListNode current=head;
+        while(current!=null){
+            lst.Add(current.val);
+            current=current.next;
+        }
+        int l=0,r=lst.Count-1;
+        while(l<=r){
+            int temp=lst[l];
+            lst[l]=lst[r];
+            lst[r]=temp;
+            l++;
+            r--;
+        }
+        head=new ListNode(lst[0]);
+        current=head;
+        for(int i=1;i<lst.Count;i++){
+            ListNode n=new ListNode(lst[i]);
+            current.next=n;
+            current=n;
+        }
+    return head;
+    */
+
+
+    /*
+           if(head==null)
+            return head;
+        Stack<int> stack=new Stack<int>();
+        ListNode current=head;
+        while(current!=null){
+            stack.Push(current.val);
+            current=current.next;
+        }
+        head=new ListNode(stack.Pop());
+        current=head;
+        while(stack.Count!=0){
+            ListNode n=new ListNode(stack.Pop());
+            current.next=n;
+            current=n;
+        }
+        return head;
+        */
+    }
+}

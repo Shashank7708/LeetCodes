@@ -1,0 +1,19 @@
+public class Solution {
+    public bool IsPerfectSquare(int num) {
+        if(num==1)
+            return true;
+        long numLong=(long)num;
+        int l=0,r=num/2;
+        while(l<=r){
+            int mid=l+(r-l)/2;
+            long sqr=(long)mid*mid;
+            if(sqr==numLong)
+                return true;
+            else if(sqr>numLong)
+                r=mid-1;
+            else 
+                l=mid+1;
+        }
+        return false;
+    }
+}

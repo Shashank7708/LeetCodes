@@ -1,0 +1,35 @@
+public class Solution {
+    public int EvalRPN(string[] tokens) {
+       Stack<int> stack=new Stack<int>();
+        
+        int counter=0;
+        while(counter<tokens.Length){
+            string ch=tokens[counter];
+            if(ch=="+" || ch=="-" || ch=="/" || ch=="*" ){
+                int b=stack.Pop();
+                int a=stack.Pop();
+                int r=PerformOperation(a,b,ch);
+                stack.Push(r);
+            }
+            else{
+                int n=0;
+                int.TryParse(ch.ToString(),out n); //tryparse required string
+                stack.Push(n); 
+            }
+            counter++;
+        }
+        return stack.Pop();
+    }
+    public int PerformOperation(int a, int b,string oprtor){
+        if(oprtor=="+")
+            return a+b;
+        else if(oprtor=="-")
+            return a-b;
+        else if(oprtor=="*")
+            return a*b;
+        else if(oprtor=="/")
+            return a/b;
+        else
+            return 0;
+    }
+}
