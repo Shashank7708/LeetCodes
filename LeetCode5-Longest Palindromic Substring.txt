@@ -1,0 +1,27 @@
+public class Solution {
+    public string LongestPalindrome(string s) {
+       
+        int[] longestLen=new int[]{0,0};
+        for(int i=0;i<s.Length;i++){
+            var currentindices=CurrentLongestPalindrome(s,i,i);
+            if(currentindices[1]-currentindices[0]>longestLen[1]-longestLen[0]){
+                longestLen=currentindices;
+            }
+            //check for even cbbd
+            if(i+1<s.Length && s[i]==s[i+1]){
+                currentindices=CurrentLongestPalindrome(s,i,i+1);
+                if(currentindices[1]-currentindices[0]>longestLen[1]-longestLen[0]){
+                longestLen=currentindices;
+                }
+            }
+        }
+    return s.Substring(longestLen[0],longestLen[1]-longestLen[0]+1);
+    }
+    private int[] CurrentLongestPalindrome(string s,int i,int j){
+        while(i>=0 && j<s.Length && s[i]==s[j]){
+            i--;
+            j++;
+        }
+        return new int[]{i+1,j-1};
+    }
+}

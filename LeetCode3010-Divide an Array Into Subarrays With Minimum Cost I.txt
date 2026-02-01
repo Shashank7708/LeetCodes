@@ -1,0 +1,25 @@
+public class Solution {
+    public int MinimumCost(int[] nums) {
+       
+        int low1=51,low2=51;
+        for(int i=1;i<nums.Length;i++){
+            if(low1>nums[i]){
+                low2=low1;
+                low1=nums[i];
+            }
+            else if(low2>nums[i])
+                low2=nums[i];
+        }
+        return nums[0]+low1+low2;
+        
+        
+        //Brute Force Approach
+        int lowest=int.MaxValue;
+        for(int i=1;i<nums.Length;i++){
+            for(int j=i+1;j<nums.Length;j++){
+                lowest=Math.Min(lowest,nums[0]+nums[i]+nums[j]);
+            }
+        }
+        return lowest;
+    }
+}
